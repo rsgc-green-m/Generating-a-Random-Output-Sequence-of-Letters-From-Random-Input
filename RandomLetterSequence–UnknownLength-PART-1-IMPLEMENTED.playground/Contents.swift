@@ -76,6 +76,55 @@ Here is the implementation:
 
 */
 
+  
+  
+  var outputString: String = ""
+  for i in 1...30{
+    let newRandomValue = arc4random_uniform(1000)
+    let newRandomValueFloat = Float(newRandomValue) / 10
+    var upperValue: Float = 0.0
+    for (letter, probability) in letterProbabilities {
+        upperValue += probability
+        if (newRandomValueFloat < upperValue) {
+            outputString += String(letter)
+            break
+        }
+    }
+  }
+  
+  
+
+outputString
+  
+outputString.characters.count
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 
